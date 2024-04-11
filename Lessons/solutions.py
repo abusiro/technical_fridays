@@ -18,7 +18,7 @@ def is_palindrome2(string: str = 'marypoppins') -> bool:
     _reversed = ""
     for i in string:
         _reversed = i + _reversed
-    return True if string == _reversed else False
+    return string == _reversed
 
 
 
@@ -47,4 +47,4 @@ if __name__ == '__main__':
     print('consecutive zeros')
     print(consecutive_zeros('10010001'))
     print('is marypoppins a palindrome?')
-    print(is_palindrome2())
+    print(is_palindrome2('abba'))
